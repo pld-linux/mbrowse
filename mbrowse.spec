@@ -16,10 +16,10 @@ BuildRequires:	net-snmp-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Mbrowse is an SNMP MIB browser based on GTK and net-snmp.
+Mbrowse is an SNMP MIB browser based on GTK+ and net-snmp.
 
 %description -l pl
-Mbrowse jest przegl±dark± SNMP MIB bazuj±c± na GTK i net-snmp.
+Mbrowse jest przegl±dark± SNMP MIB bazuj±c± na GTK+ i net-snmp.
 
 %prep
 %setup -q
