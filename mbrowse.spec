@@ -1,19 +1,18 @@
 Summary:	SNMP MIB browser
 Summary(pl):	Przegl±darka MIB
 Name:		mbrowse
-Version:	0.2.3
-Release:	4
+Version:	0.3.0
+Release:	1
 License:	GPL
 Group:		X11/Applications/Networking
-Source0:	http://goldplated.atlcartel.com/%{name}-%{version}.tar.gz
+Source0:	http://www.kill-9.org/mbrowse/%{name}-%{version}.tar.gz
 Patch0:		%{name}-ac_fixes.patch
-URL:		http://goldplated.atlcartel.com/mbrowse.html
+URL:		http://www.kill-9.org/mbrowse/
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	gtk+-devel
 BuildRequires:	ucd-snmp-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
-
 
 %description
 Mbrowse is an SNMP MIB browser based on GTK and net-snmp.
