@@ -29,7 +29,7 @@ Mbrowse jest przegl±dark± SNMP MIB bazuj±c± na GTK i net-snmp.
 
 %build
 rm -f missing
-aclocal
+%{__aclocal}
 %{__autoconf}
 %{__automake}
 %configure
