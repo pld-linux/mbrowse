@@ -21,14 +21,14 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Mbrowse is an SNMP MIB browser based on GTK and net-snmp.
 
 %description -l pl
-Mbrowse jest pzregl±darka SNMP MIB bazujacac± na GTK i net-snmp.
+Mbrowse jest przegl±dark± SNMP MIB bazuj±c± na GTK i net-snmp.
 
 %prep
 %setup -q
 %patch0 -p1
 
 %build
-rm -f missinf
+rm -f missing
 aclocal
 autoconf
 automake -a -c -f
