@@ -772,3 +772,16 @@ diff -Nru mbrowse-0.2.3/aclocal.m4 mbrowse-0.2.3.new/aclocal.m4
 -  rm -f conf.gtktest
 -])
 -
+--- mbrowse-0.2.3/configure.in~	Thu Apr  4 10:54:52 2002
++++ mbrowse-0.2.3/configure.in	Thu Apr  4 10:54:52 2002
+@@ -10,9 +10,7 @@
+ AC_HEADER_STDC
+ 
+ AC_CHECK_LIB(socket,getservbyname)
+-AC_CHECK_FUNC(gethostbyname, ,
+-    AC_CHECK_LIB(nsl, gethostbyname))
+-AC_CHECK_LIB(nsl,gethostbyname)
++AC_CHECK_FUNC(gethostbyname, [], AC_CHECK_LIB(nsl, gethostbyname))
+ AC_CHECK_LIB(crypto,EVP_md5)
+ AC_CHECK_LIB(kstat,kstat_lookup)
+ AC_CHECK_LIB(snmp,bprintf,AC_DEFINE(HAVE_BROKEN_API))
