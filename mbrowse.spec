@@ -6,6 +6,7 @@ Release:	3
 License:	GPL
 Group:		X11/Applications/Networking
 Source0:	http://www.kill-9.org/mbrowse/%{name}-%{version}.tar.gz
+# Source0-md5:	f32e8481115b3051973414a24e5505bc
 Patch0:		%{name}-ac_fixes.patch
 URL:		http://www.kill-9.org/mbrowse/
 BuildRequires:	autoconf
