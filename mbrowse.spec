@@ -2,7 +2,7 @@ Summary:	SNMP MIB browser
 Summary(pl):	Przegl±darka MIB
 Name:		mbrowse
 Version:	0.2.3
-Release:	3
+Release:	4
 License:	GPL
 Group:		X11/Applications/Networking
 Source0:	http://goldplated.atlcartel.com/%{name}-%{version}.tar.gz
@@ -41,12 +41,10 @@ rm -rf $RPM_BUILD_ROOT
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
-gzip -9nf AUTHORS ChangeLog NEWS README TODO
-
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc *.gz
+%doc AUTHORS ChangeLog NEWS README TODO
 %attr(755,root,root) %{_bindir}/*
