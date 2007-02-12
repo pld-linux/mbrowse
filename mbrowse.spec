@@ -1,5 +1,5 @@
 Summary:	SNMP MIB browser
-Summary(pl):	Przegl±darka MIB
+Summary(pl.UTF-8):   PrzeglÄ…darka MIB
 Name:		mbrowse
 Version:	0.3.1
 Release:	1
@@ -18,8 +18,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 Mbrowse is an SNMP MIB browser based on GTK+ and net-snmp.
 
-%description -l pl
-Mbrowse jest przegl±dark± SNMP MIB bazuj±c± na GTK+ i net-snmp.
+%description -l pl.UTF-8
+Mbrowse jest przeglÄ…darkÄ… SNMP MIB bazujÄ…cÄ… na GTK+ i net-snmp.
 
 %prep
 %setup -q
