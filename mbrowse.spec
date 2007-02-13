@@ -1,5 +1,5 @@
 Summary:	SNMP MIB browser
-Summary(pl.UTF-8):   Przeglądarka MIB
+Summary(pl.UTF-8):	Przeglądarka MIB
 Name:		mbrowse
 Version:	0.3.1
 Release:	1
