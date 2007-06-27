@@ -236,7 +236,7 @@
 +          }
 +
 +          #ifdef HAVE_NETSNMP
-+	    version2 = strdup( NetSnmpVersionInfo );
++	    version2 = strdup( netsnmp_get_version() );
 +          #else
 +            version2 = strdup( VersionInfo);
 +          #endif
