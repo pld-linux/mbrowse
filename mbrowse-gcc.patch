@@ -1,0 +1,11 @@
+diff -urN mbrowse-0.3.1.org/src/snmpstuff.c mbrowse-0.3.1/src/snmpstuff.c
+--- mbrowse-0.3.1.org/src/snmpstuff.c	2002-06-21 13:45:18.000000000 +0200
++++ mbrowse-0.3.1/src/snmpstuff.c	2007-06-27 13:19:58.986787131 +0200
+@@ -360,6 +360,7 @@
+       case TYPE_NETADDR:
+       case TYPE_OTHER:
+       default:
++	{}
+     }
+   }
+   if (type == 0) {
