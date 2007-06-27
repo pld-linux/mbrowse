@@ -2,12 +2,13 @@ Summary:	SNMP MIB browser
 Summary(pl.UTF-8):	Przeglądarka MIB
 Name:		mbrowse
 Version:	0.3.1
-Release:	1
+Release:	2
 License:	GPL
 Group:		X11/Applications/Networking
 Source0:	http://www.kill-9.org/mbrowse/%{name}-%{version}.tar.gz
 # Source0-md5:	52c6b0a7ad9bcc7be70a35ed6b0d0d89
 Patch0:		%{name}-ac_fixes.patch
+Patch1:		%{name}-gcc.patch
 URL:		http://www.kill-9.org/mbrowse/
 BuildRequires:	autoconf
 BuildRequires:	automake
@@ -24,6 +25,7 @@ Mbrowse jest przeglądarką SNMP MIB bazującą na GTK+ i net-snmp.
 %prep
 %setup -q
 %patch0 -p1
+%patch1 -p1
 
 %build
 %{__aclocal}
