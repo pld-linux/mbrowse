@@ -2,7 +2,7 @@ Summary:	SNMP MIB browser
 Summary(pl.UTF-8):	Przeglądarka MIB
 Name:		mbrowse
 Version:	0.3.1
-Release:	8
+Release:	9
 License:	GPL
 Group:		X11/Applications/Networking
 Source0:	http://www.kill-9.org/mbrowse/%{name}-%{version}.tar.gz
