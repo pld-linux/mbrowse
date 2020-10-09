@@ -1,19 +1,18 @@
 Summary:	SNMP MIB browser
 Summary(pl.UTF-8):	Przeglądarka MIB
 Name:		mbrowse
-Version:	0.3.1
-Release:	9
-License:	GPL
+Version:	0.4.3
+Release:	1
+License:	GPL v2
 Group:		X11/Applications/Networking
-Source0:	http://www.kill-9.org/mbrowse/%{name}-%{version}.tar.gz
-# Source0-md5:	52c6b0a7ad9bcc7be70a35ed6b0d0d89
-Patch0:		%{name}-ac_fixes.patch
-Patch1:		%{name}-gcc.patch
-URL:		http://www.kill-9.org/mbrowse/
+Source0:	http://downloads.sourceforge.net/mbrowse/%{name}-%{version}.tar.gz
+# Source0-md5:	9857a88d2e6246384587350a647e605d
+URL:		https://sourceforge.net/projects/mbrowse/
 BuildRequires:	autoconf
 BuildRequires:	automake
-BuildRequires:	gtk+-devel
-BuildRequires:	net-snmp-devel
+BuildRequires:	gtk+2-devel >= 1:2.0.0
+BuildRequires:	net-snmp-devel >= 4.2
+BuildRequires:	pkgconfig
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -24,8 +23,6 @@ Mbrowse jest przeglądarką SNMP MIB bazującą na GTK+ i net-snmp.
 
 %prep
 %setup -q
-%patch0 -p1
-%patch1 -p1
 
 %build
 %{__aclocal}
@@ -48,4 +45,4 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc AUTHORS ChangeLog NEWS README TODO
-%attr(755,root,root) %{_bindir}/*
+%attr(755,root,root) %{_bindir}/mbrowse
