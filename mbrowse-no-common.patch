@@ -1,0 +1,11 @@
+--- mbrowse-0.4.3/src/callbacks.c.orig	2010-11-16 11:20:23.000000000 +0100
++++ mbrowse-0.4.3/src/callbacks.c	2020-10-09 19:47:28.403373236 +0200
+@@ -28,7 +28,7 @@
+ extern int context_id;
+ extern int tview;
+ 
+-struct menu_items bookmark_items[128];
++extern struct menu_items bookmark_items[128];
+ extern int dont_select_damnit;
+ extern int dont_update_entry;
+ static struct tree *mibtree;

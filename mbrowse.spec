@@ -7,6 +7,7 @@ License:	GPL v2
 Group:		X11/Applications/Networking
 Source0:	http://downloads.sourceforge.net/mbrowse/%{name}-%{version}.tar.gz
 # Source0-md5:	9857a88d2e6246384587350a647e605d
+Patch0:		%{name}-no-common.patch
 URL:		https://sourceforge.net/projects/mbrowse/
 BuildRequires:	autoconf
 BuildRequires:	automake
@@ -23,6 +24,7 @@ Mbrowse jest przeglądarką SNMP MIB bazującą na GTK+ i net-snmp.
 
 %prep
 %setup -q
+%patch0 -p1
 
 %build
 %{__aclocal}
