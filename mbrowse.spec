@@ -24,7 +24,7 @@ Mbrowse jest przeglądarką SNMP MIB bazującą na GTK+ i net-snmp.
 
 %prep
 %setup -q
-%patch0 -p1
+%patch -P0 -p1
 
 %build
 %{__aclocal}
